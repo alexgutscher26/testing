@@ -1,6 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
-
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -40,7 +39,7 @@ const Hero = () => {
             <Container delay={0.2}>
                 <div className="flex items-center justify-center md:gap-x-6 mt-8">
                     <Button asChild size="lg">
-                        <Link href="/app">
+                        <Link href="/dashboard">
                             Start for free
                         </Link>
                     </Button>

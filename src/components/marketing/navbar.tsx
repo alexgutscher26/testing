@@ -52,20 +52,20 @@ const Navbar = () => {
                         </div>
                         <div className="items-center flex gap-2 lg:gap-4">
                             {user ? (
-                                <Button size="sm" variant="white" asChild className="hidden sm:flex">
+                                <Button size="sm"variant="secondary" asChild className="hidden sm:flex">
                                     <Link href="/dashboard">
                                         Dashboard
                                     </Link>
                                 </Button>
                             ) : (
                                 <>
-                                    <Button size="sm" variant="tertiary" asChild className="hover:translate-y-0 hover:scale-100">
-                                        <Link href="/auth/signin">
+                                    <Button size="sm"variant="secondary"  asChild className="hover:translate-y-0 hover:scale-100">
+                                        <Link href="sign-in">
                                             Login
                                         </Link>
                                     </Button>
-                                    <Button size="sm" variant="white" asChild className="hidden sm:flex">
-                                        <Link href="/auth/signup">
+                                    <Button size="sm"variant="secondary" asChild className="hidden sm:flex">
+                                        <Link href="sign-up">
                                             Start for free
                                             <ArrowRightIcon className="w-4 h-4 ml-2 hidden lg:block" />
                                         </Link>

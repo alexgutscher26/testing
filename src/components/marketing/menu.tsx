@@ -19,13 +19,13 @@ const Menu = () => {
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>
-                        <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
+                        <NavigationMenuLink className="flex items-center justify-center h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none text-center">
                             How it works
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-muted-foreground hover:text-foreground">
+                    <NavigationMenuTrigger className="flex items-center justify-center text-muted-foreground hover:text-foreground text-center">
                         Features
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -60,20 +60,20 @@ const Menu = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/pricing" legacyBehavior passHref>
-                        <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
+                        <NavigationMenuLink className="flex items-center justify-center h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none text-center">
                             Pricing
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/integrations" legacyBehavior passHref>
-                        <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
+                        <NavigationMenuLink className="flex items-center justify-center h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none text-center">
                             Integrations
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-muted-foreground hover:text-foreground">
+                    <NavigationMenuTrigger className="flex items-center justify-center text-muted-foreground hover:text-foreground text-center">
                         Resources
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -105,11 +105,11 @@ const Item = ({ title, href, children, icon, ...props }: Props) => {
                     <div className="flex items-center mt-1 justify-center p-1 w-8 h-8 rounded-md border border-border/80">
                         {icon}
                     </div>
-                    <div className="text-start ml-3">
+                    <div className="text-center ml-3">
                         <span className="text-sm group-hover:text-foreground font-normal leading-none">
                             {title}
                         </span>
-                        <p className="text-sm mt-0.5 line-clamp-2 text-muted-foreground">
+                        <p className="text-sm mt-0.5 line-clamp-2 text-muted-foreground text-center">
                             {children}
                         </p>
                     </div>
